@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MosqueCONNECT - Login Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("img/hero.jpg"); /* Adjust to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 100px; /* Space from top */
+        }
+
+        .login-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-3">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="mb-0">Mosque<span class="text-primary">CONNECT</span></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav ms-lg-auto mx-xl-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block">SignUp</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Login Start -->
+    <div class="login-container">
+        <h2 class="login-title">Login</h2>
+        <form action="login.php" method="POST">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="mb-3">
+                <label for="role" class="form-label">Select Role</label>
+                <select class="form-control" id="role" name="role" required>
+                    <option value="admin">Admin</option>
+                    <option value="member">Member</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div class="text-center mt-3">
+            <a href="index.html" class="btn btn-secondary">Back</a>
+        </div>
+    </div>
+    <!-- Login End -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+		<div class="container-fluid bg-dark text-light py-4">
+        <p>&copy; 2024 MosqueCONNECT. All rights reserved.</p>
+    </div>
+		</div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
